@@ -1,0 +1,22 @@
+runtime: nodejs
+env: flex
+service: web-server
+resources:
+  cpu: 3
+  memory_gb: 2
+  disk_size_gb: 10
+health_cheack:
+  enable_health_check: True
+  check_interval_sec: 15
+  timeout_sec: 4
+  unhealthy_threshold: 3
+  healthy_threshold: 3
+automatic_scaling:
+  min_num_instances: 3
+  max_num_instances: 5
+  cool_down_period_sec: 120
+  cpu_utilization:
+    target_utilization: 0.7
+# Factor out the below, eventually (service call?)
+env_variables:
+  TSIO_GRAVATAR_URL: 'https://en.gravatar.com/technicallyspeakingio.json'
