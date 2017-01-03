@@ -1,0 +1,5 @@
+DOCKER_REPOSITORY=technicallyspeaking/technicallyspeaking-io
+DOCKER_IMAGE_TAG=web-server
+DOCKER_CONTAINER_NAME=web-server
+GCLOUD_HOSTING_DOMAIN=us.gcr.io
+GCLOUD_PROJECT_NAME=technicallyspeaking-io
