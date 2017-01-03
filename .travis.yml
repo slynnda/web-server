@@ -1,0 +1,15 @@
+sudo: required
+language: c
+services:
+  - docker
+env:
+  global:
+    - WEB_SERVER_IMAGE_ID=$DOCKER_HUB_REPO:web-server-$TRAVIS_BRANCH
+script:
+  - ci/travis.sh
+branches:
+  only: 
+    - develop
+    - staging
+    - master
+    - production
