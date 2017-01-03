@@ -22,7 +22,10 @@
   "homepage": "https://github.com/technicallyspeaking/web-server#readme",
   "dependencies": {
     "assert-plus": "^1.0.0",
+    "body-parser": "^1.15.2",
+    "bunyan": "^1.8.5",
     "compression": "^1.6.2",
+    "cookie-parser": "^1.4.3",
     "cors": "^2.8.1",
     "d3": "^4.4.0",
     "deasync": "^0.1.9",
